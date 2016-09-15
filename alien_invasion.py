@@ -1,3 +1,4 @@
+"""This file initializes the Alien Invasion game."""
 import sys
 import pygame
 from pygame.sprite import Group
