@@ -25,7 +25,7 @@ def check_keydown_events(event, ai_settings, screen, ship, bullets):
     if event.key == pygame.K_LEFT:
         ship.moving_left = True
 
-    elif event.key == pygame.K_SPACE:
+    elif event.key == pygame.K_z:
         fire_bullet(ai_settings, screen, ship, bullets)
     
     elif event.key == pygame.K_q:
@@ -173,9 +173,3 @@ def change_fleet_direction(ai_settings, aliens):
     for alien in aliens.sprites():
         alien.rect.y += ai_settings.fleet_drop_speed
     ai_settings.fleet_direction *= -1
-
-
-
-
-
-
